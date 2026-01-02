@@ -1,0 +1,6 @@
+## 2. Difference between MVC and Web API?
+
+| MVC | Web API |
+|---|---|
+| Returns Views | Returns JSON |
+| UI-based apps | SPA / Mobile apps |
