@@ -1,5 +1,5 @@
-#⭐ Which architecture is used where?
-##1️⃣ Small Projects (CRUD, simple logic)
+# ⭐ Which architecture is used where?
+## 1️⃣ Small Projects (CRUD, simple logic)
 
 Use:
 ✔ N-Tier (3-Layer) → UI → Business → Data
@@ -16,7 +16,7 @@ Easy maintainability
 
 👉 Clean, Onion, or DDD would be overkill for small projects.
 
-##2️⃣ Medium Projects (multiple modules, service integration)
+## 2️⃣ Medium Projects (multiple modules, service integration)
 
 
 Use:
@@ -32,7 +32,7 @@ Better structure
 
 Tests become easier
 
-##3️⃣ Enterprise / Complex Domain Projects
+## 3️⃣ Enterprise / Complex Domain Projects
 
 Use:
 ✔ DDD (Domain-Driven Design)
