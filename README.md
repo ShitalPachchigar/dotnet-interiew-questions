@@ -10,7 +10,7 @@ This repository contains a curated collection of **.NET, C#, ASP.NET Core, EF Co
 - C# (Basics & Advanced)
 - ASP.NET Core (MVC & Web API)
 - Entity Framework Core
-- Clean Architecture & Design Patterns
+- Architecture & Design Patterns
 - SQL
 - Git
 
