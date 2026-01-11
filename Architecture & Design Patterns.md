@@ -50,4 +50,17 @@ Bounded contexts
 
 Many modules and integrations
 
+# Examples of Common Patterns Across Architectures
+
+## | Pattern                        | What it Does                                   | Architecture Fit      | Notes                                                                   |
+| ------------------------------ | ---------------------------------------------- | --------------------- | ----------------------------------------------------------------------- |
+| **Repository**                 | Encapsulates data access                       | Layered, Onion, Clean | In Onion/Clean, often interfaces in core, implementation in outer layer |
+| **Unit of Work**               | Groups DB operations into a transaction        | Layered, Onion, Clean | Can be implemented in infrastructure; business logic calls it           |
+| **Factory / Abstract Factory** | Creates objects without exposing instantiation | Any                   | In Clean Architecture, factories can live in Application or Core layer  |
+| **Singleton**                  | Ensures single instance                        | Any                   | Often in infrastructure (logging, config)                               |
+| **Strategy**                   | Allows interchangeable algorithms              | Any                   | In Clean/CQRS, e.g., different validation or calculation strategies     |
+| **Command**                    | Encapsulates a request                         | Onion, Clean          | Fits naturally with CQRS                                                |
+| **Mediator**                   | Decouples sender and receiver                  | Onion, Clean          | Often used to implement CQRS handlers                                   |
+| **Decorator**                  | Adds behavior dynamically                      | Any                   | Example: add caching to repository without changing code                |
+| **Observer**                   | Event notification                             | Any                   | Example: domain events in Onion/Clean                                   |
 
