@@ -63,4 +63,10 @@ Many modules and integrations
 | **Mediator**                   | Decouples sender and receiver                  | Onion, Clean          | Often used to implement CQRS handlers                                   |
 | **Decorator**                  | Adds behavior dynamically                      | Any                   | Example: add caching to repository without changing code                |
 | **Observer**                   | Event notification                             | Any                   | Example: domain events in Onion/Clean                                   |
+# ✅ What is the Repository Pattern?
 
+## The Repository Pattern is a design pattern used to separate the data access logic from the business logic.
+
+👉 It acts like a middle layer between your application and the database.
+
+Instead of writing database queries (EF Core, SQL, Dapper) directly inside controllers or services, you write them in a Repository.
